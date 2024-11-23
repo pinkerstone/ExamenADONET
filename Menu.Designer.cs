@@ -52,6 +52,7 @@
             btnConsultar.TabIndex = 0;
             btnConsultar.Text = "Consultar productos";
             btnConsultar.UseVisualStyleBackColor = true;
+            btnConsultar.Click += btnConsultar_Click_1;
             // 
             // btnActualizar
             // 
@@ -61,6 +62,7 @@
             btnActualizar.TabIndex = 0;
             btnActualizar.Text = "Actualizar productos";
             btnActualizar.UseVisualStyleBackColor = true;
+            btnActualizar.Click += btnActualizar_Click_1;
             // 
             // bntElminar
             // 
@@ -70,6 +72,7 @@
             bntElminar.TabIndex = 0;
             bntElminar.Text = "Eliminar producto";
             bntElminar.UseVisualStyleBackColor = true;
+            bntElminar.Click += bntElminar_Click_1;
             // 
             // Menu
             // 
@@ -82,6 +85,7 @@
             Controls.Add(btnAgregar);
             Name = "Menu";
             Text = "Menu";
+            Load += Menu_Load;
             ResumeLayout(false);
         }
 

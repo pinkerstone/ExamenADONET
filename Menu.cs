@@ -20,25 +20,32 @@ namespace ExamenADONET
         private void btnAgregar_Click(object sender, EventArgs e)
         {
             frmCrearProductos crearProductos = new frmCrearProductos();
-            crearProductos.Show();
+            crearProductos.ShowDialog();
         }
 
-        private void btnConsultar_Click(object sender, EventArgs e)
+
+        private void btnConsultar_Click_1(object sender, EventArgs e)
         {
             frmBuscarProductos buscarProdutos = new frmBuscarProductos();
-            buscarProdutos.Show();
+            buscarProdutos.ShowDialog();
+
         }
 
-        private void btnActualizar_Click(object sender, EventArgs e)
+        private void Menu_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnActualizar_Click_1(object sender, EventArgs e)
         {
             frmActualizarProductos actualizarProductos = new frmActualizarProductos();
-            actualizarProductos.Show();
+            actualizarProductos.ShowDialog();
         }
 
-        private void bntElminar_Click(object sender, EventArgs e)
+        private void bntElminar_Click_1(object sender, EventArgs e)
         {
             frmEliminarProductos eliminarProductos = new frmEliminarProductos();
-            eliminarProductos.Show();
+            eliminarProductos.ShowDialog();
         }
     }
 }

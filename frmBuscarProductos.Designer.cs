@@ -81,6 +81,7 @@
             Controls.Add(btnBuscar);
             Name = "frmBuscarProductos";
             Text = "Buscar Productos";
+            Load += frmBuscarProductos_Load;
             ((System.ComponentModel.ISupportInitialize)dgvListadoProductos).EndInit();
             ResumeLayout(false);
             PerformLayout();

@@ -26,7 +26,7 @@ namespace ExamenADONET
 
             try
             {
-                using(SqlConnection conexion = new SqlConnection(Constantes.cadenaConexion))
+                using (SqlConnection conexion = new SqlConnection(Constantes.cadenaConexion))
                 {
                     conexion.Open();
                     command = new SqlCommand("USP_BUSCARPRODUCTO", conexion);
@@ -68,6 +68,11 @@ namespace ExamenADONET
 
                 txtNombreProducto.Text = "";
             }
+        }
+
+        private void frmBuscarProductos_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }
